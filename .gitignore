@@ -33,4 +33,6 @@
 .Trashes  
 Icon?  
 ehthumbs.db  
-Thumbs.db  
+Thumbs.db 
+*.iml
+/.idea/
