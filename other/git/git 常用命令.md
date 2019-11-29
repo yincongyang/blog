@@ -54,6 +54,32 @@ git config --global core.safecrlf warn
 git clone {远程地址}
 ```
 
+## 设置代理
+1： 设置全局代理
+```
+git config --global https.proxy http://10.166.17.101:8080
+git config --global https.proxy http://10.166.17.101:1080
+```
+2: 取消全局代理
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+3: 设置本地代理
+```
+git config --local https.proxy http://127.0.0.1:1080
+git config --local https.proxy https://127.0.0.1:1080
+```
+4: 取消本地代理
+```
+git config --local --unset http.proxy
+git config --local --unset https.proxy
+```
+5：仅为github设置代理
+```
+git config --global http.https://github.com.proxy http://10.166.17.101:8080
+```
+
 ## 分支管理：git branch|checkout
 
 ### 查看分支
